@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+@keyframes brands{
+  from{
+     transform: translateX(0px);
+
+         }
+         to{
+         transform: translateX(2230px);
+
+         }
+
+}
+@keyframes brands2{
+  from{
+     transform: translateX(-2230px);
+
+           }
+           to{
+           transform: translateX(0);
+
+           }
+
+}
+
+  .parents1{
+animation: brands 25s ;
+
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+  }
+
+  .parents2{
+     animation: brands2 25s ;
+
+     animation-iteration-count: infinite;
+     animation-timing-function: linear;
+
+     }
+
+
+.App > *  {
+
+  animation: fadeUp 0.5s linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 23%;
+    opacity: 0;
+ transform: translateY(0); 
+}
+
+.App > *{
+  opacity: 0;
+    transform: translateY(0); /* pas de décalage réel */
+
+} 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(160px);
+  }
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes line {
+  from {
+
+width: 0;  }
+  to {
+    opacity: 1;
+
+width: 200px;  }
+}
+
+.line,.line2{
+    animation: line 2s linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 65%;
+  
+}
