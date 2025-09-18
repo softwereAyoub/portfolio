@@ -15,6 +15,7 @@
     "caniuse-lite": "^1.0.30001743",
     "cors": "^2.8.5",
     "express": "^4.18.1",
+    "gsap": "^3.13.0",
     "nodemailer": "^6.7.5",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
@@ -34,8 +35,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +57,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^3.4.17"
   }
 }

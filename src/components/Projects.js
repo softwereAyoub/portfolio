@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhp ,faReact ,faLaravel} from '@fortawesome/free-brands-svg-icons'
 import { faN ,faDatabase } from '@fortawesome/free-solid-svg-icons'
 
-export const Projects = () => {
+export const Projects = ({lineRef}) => {
 
   const projects = [
     {
@@ -49,7 +49,7 @@ export const Projects = () => {
  
       <div className="project  max-sm:pl-[50px]  text-center">
                 <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-violet-500 via-pink-500 to-pink-500">Projects</h2>
-                             <div className=" h-[5px] w-[200px] line2 " ></div>
+                             <div ref={lineRef} id="line2" className=" h-[5px]  line2 " ></div>
 
                 <p className=" text-gray-400 ">In this section, you’ll find a selection of projects that reflect my skills, creativity, and passion for development. Each project represents a unique challenge I’ve taken on — from building responsive websites to developing interactive applications. I focus on writing clean and efficient code while also paying attention to design and user experience. These projects showcase not only my technical abilities but also my commitment to learning, problem-solving, and delivering practical solutions.</p>
                 </div>

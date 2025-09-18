@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhp ,faReact ,faLaravel,faJs ,faNodeJs , faGit,faBootstrap} from '@fortawesome/free-brands-svg-icons'
 import { faN ,faDatabase } from '@fortawesome/free-solid-svg-icons'
 
-export const Skills = () => {
+export const Skills = ({lineRef}) => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
